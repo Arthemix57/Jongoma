@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Réserver une table – Jongoma</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<div class="page-head"><div class="container"><h1>Réserver une table</h1><p>Confirmation par téléphone ou par message</p></div></div>
+<section><div class="container">
+  <div class="form-box">
+    <form id="form-reserver">
+      <div class="row">
+        <div><label for="nom">Nom</label><input id="nom" name="nom" required></div>
+        <div><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required></div>
+      </div>
+      <div class="row">
+        <div><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+        <div><label for="heure">Heure</label>
+          <select id="heure" name="heure" required>
+            <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option>
+            <option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+          </select></div>
+      </div>
+      <div><label for="personnes">Nombre de personnes</label><input id="personnes" name="personnes" type="number" min="1" max="30" value="2" required></div>
+      <div><label for="message">Message (allergies, occasion…)</label><textarea id="message" name="message" rows="3"></textarea></div>
+      <button class="btn" type="submit">Envoyer la demande</button>
+      <p class="success">Merci ! Votre demande est prête à être envoyée. Nous vous confirmons rapidement.</p>
+    </form>
+    <p style="margin-top:18px;text-align:center">Ou appelez-nous : <a class="js-phone" href="#"></a></p>
+  </div>
+</div></section>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script>
+</body></html>

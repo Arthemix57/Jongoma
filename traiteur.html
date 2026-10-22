@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Service traiteur, séminaires & réunions – Jongoma</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<div class="page-head"><div class="container"><h1>Traiteur, séminaires & réunions</h1><p>Vos événements, à la sénégalaise</p></div></div>
+<section><div class="container">
+  <div class="grid" style="margin-bottom:40px">
+    <div class="card"><h3>Séminaires & réunions</h3><p>Plateaux repas et buffets livrés sur votre lieu de travail.</p></div>
+    <div class="card"><h3>Événements privés</h3><p>Anniversaires, baptêmes, mariages : plats en grande quantité.</p></div>
+    <div class="card"><h3>Sur mesure</h3><p>Menu adapté à votre budget et à vos convives.</p></div>
+  </div>
+  <div class="form-box">
+    <h2 class="section-title" style="font-size:1.6rem">Demande de devis</h2>
+    <form id="form-traiteur">
+      <div class="row">
+        <div><label for="nom">Nom</label><input id="nom" name="nom" required></div>
+        <div><label for="societe">Société (optionnel)</label><input id="societe" name="societe"></div>
+      </div>
+      <div class="row">
+        <div><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required></div>
+        <div><label for="type">Type d'événement</label>
+          <select id="type" name="type"><option>Séminaire</option><option>Réunion</option><option>Événement privé</option><option>Autre</option></select></div>
+      </div>
+      <div class="row">
+        <div><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+        <div><label for="invites">Nombre d'invités</label><input id="invites" name="invites" type="number" min="5" required></div>
+      </div>
+      <div><label for="message">Détails</label><textarea id="message" name="message" rows="4"></textarea></div>
+      <button class="btn" type="submit">Demander un devis</button>
+      <p class="success">Merci ! Votre demande est prête à être envoyée.</p>
+    </form>
+  </div>
+</div></section>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script>
+</body></html>
