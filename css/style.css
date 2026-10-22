@@ -230,3 +230,4 @@ header.scrolled .nav{height:58px}
   input,select,textarea{font-size:16px}
 }
 .story{padding-top:clamp(64px,9vw,112px)}
+@media(max-width:900px){.nav-actions{margin-left:auto}}
